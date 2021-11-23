@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #FFF;
+	background:linear-gradient(rgb(233, 223, 135),rgb(197, 110, 161));
+    height: 100vh;
+}
+
+header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header h1{ 
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: rgb(38, 11, 63);
+	margin-bottom: 1rem;
+	margin-left: 254px;
+}
+
+#form {
+	display: flex;;
+}
+
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+#input {
+	flex: 1 1 0%;
+	background-color: rgb(230, 228, 238);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: rgb(7, 6, 6);
+	font-size: 1.25rem;
+}
+#submit {
+	color:rgb(3, 0, 0);
+	font-size: 20px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: 0.4s;
+    background-color: rgb(33, 121, 236);
+    border-radius: 20px;
+	width: 10%;
+}
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.task-list {
+	padding: 1rem;
+}
+
+.task-list h2 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: rgb(16, 46, 44);
+	margin-bottom: 1rem;
+	margin-left: 300px;
+}
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color:rgb(202, 187, 250);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.task .content {
+	flex: 1 1 0%;
+}
+
+.task .content .text {
+	color: rgb(30, 53, 33);
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+    font-weight: bold;
+}
+
+.task .content .text:not(:read-only) {
+	color: rgb(41, 0, 48);
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.task .actions .edit {
+	color:purple ;
+}
+
+.task .actions .delete {
+	color: crimson;
+}
